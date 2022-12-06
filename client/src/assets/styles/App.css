@@ -1,0 +1,135 @@
+.App {
+  background-image: url('../images/background3.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.App-logo {
+  width: 150px;
+  margin-left: 25px;
+  height: 150px;
+  flex-grow: 1;
+  max-width: 150px;
+}
+
+.App-logo img {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.App-header {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: absolute;
+  background-color: rgba(21, 56, 157);
+  border-bottom: 3px solid rgb(134, 153, 207);
+}
+
+.App-header-menu {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+ /* color: #5F8D17;*/
+  /*width: calc(100vw - 200px);*/
+  flex-grow: 3;
+  min-width: 300px;
+  max-width: 600px;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  z-index: 1000;
+}
+
+.App-header-menu a {
+ color: white;
+ text-decoration: none;
+}
+.App-main {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 150px;
+}
+
+.App-main-window {
+  width: 100%;
+  
+}
+
+.App-preview-page {
+  display: absolute;
+  display: none;
+}
+.App-link {
+  color: #61dafb;
+}
+	.Home-page .Page-header {
+		width: 100%;
+		height: 100%;
+	}
+	.Home-page {
+		margin-top: -50px;
+	}
+	.Home-page .Page-header .image{
+		background-image: url( '../images/home.jpg');
+		background-position: center;
+		margin-top: 0px;
+			width: 100%;
+			height: 100%;
+}
+	.Home-page .Page-header{
+		width: 100%;
+		height: 450px;
+	}
+	
+	.App-content-body {
+		max-width: 800px;
+  height: 100vh;
+  margin: 0 auto;
+    border: 3px solid rgb(134, 153, 207);
+  background-color:rgba(0,0,0,0.2);
+  height: 100%
+	}
+	
+	.description {
+		display: flex;
+		color: white;
+		height: 400px;
+	}
+	
+	.description-text {
+		margin: 20px;
+		border: 3px solid rgb(134, 153, 207,.6);
+    background-color:rgba(0,0,0,0.2);
+    padding: 10px;
+	}
+	
+	.description-odd {
+		flex-direction: row-reverse;
+	}
+	
+	.Link-page .App-content-body {
+		height: 400px;
+		margin-top: 100px;
+		
+	}
+	.Link-page .Page-header {
+		color: white;
+		font-size: 22px;
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}

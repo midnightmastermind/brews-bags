@@ -1,3 +1,11 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,6 +19,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(wasted-font/WastedPersonalUseRegular-WyegG.ttf);
 }
 
 /* Scrollbar size */
@@ -33,7 +46,7 @@ code {
     background-color: transparent;
 }
 
-.cover-image {
+.cover-container {
 	width: 100%;
 	height: 100vh;
 	position: absolute;
@@ -44,22 +57,58 @@ code {
 	bottom: 0;
 }
 
-.cover-image img {
+.cover-container .cover-image {
 	height: 100%;
 	width: 100%;
+  filter: blur(4px);
 	z-index: 10001;
 }
 
-.cover-image .welcome {
+.cover-container .welcome {
 	position: absolute;
-	width: 200px;
-	height: 100px;
-	left: 46%;
-	top: 60%;
+  display: flex;
+	width: 400px;
+	height: auto;
+	left: 50%;
+  right: 50%;
+  top: 50%;
+  flex-direction: column;
+  z-index: 10002;
+  font-family: titleFont;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: rgba(0,0,0,0.5);
+  transform: translate(-50%, -50%);
 }
-.cover-image .welcome a {
+
+.cover-container .welcome .welcome-logo {
+  display: block;
+  max-width: 200px;
+  max-height: 353px;
+  width: auto;
+  height: auto;
+}
+.cover-container .welcome .title {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 45px;
+}
+
+.cover-container .welcome .user-actions {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.cover-container .welcome .user-actions a {
+  color: white;
 }

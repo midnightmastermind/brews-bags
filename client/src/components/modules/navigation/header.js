@@ -11,7 +11,7 @@ class Header extends Component {
     render() {
       return (
         <div className="App-page App-header">
-          <Link className="App-logo" to="/"><img src={logo} alt="logo" /></Link>
+          <Link className="App-logo" to="/"><img src={logo} alt="logo" />Brews Bags</Link>
           <div className="App-header-menu">
 			      <Link to="/home">home</Link>
             <Link to="/collection">collection</Link>

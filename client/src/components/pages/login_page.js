@@ -18,10 +18,11 @@ class LoginPage extends Component {
      
       return (
         <div className="App-page Login-page">
-          <div className="App-content">
-              <div className="Page-header">Login</div>
-              <div className="App-content-body">
-              </div>
+          <div className="login-container">
+            <div className="login-box">
+              <div className="login-title">login</div>
+              <div className="login-form"></div>
+            </div>
           </div>
         </div>
           )

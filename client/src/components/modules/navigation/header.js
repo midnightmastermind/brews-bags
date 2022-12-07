@@ -13,9 +13,9 @@ class Header extends Component {
         <div className="App-page App-header">
           <Link className="App-logo" to="/"><img src={logo} alt="logo" />Brews Bags</Link>
           <div className="App-header-menu">
-			      <Link to="/home">home</Link>
-            <Link to="/collection">collection</Link>
-            <Link to="/connect">connect</Link>
+			      <Link to="/home">Home</Link>
+            <Link to="/schedule">Schedule</Link>
+            <Link to="/standings">Standings</Link>
           </div>
         </div>
           )

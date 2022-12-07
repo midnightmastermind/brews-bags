@@ -3,7 +3,11 @@ const Schema = mongoose.Schema;
 
 //create schema
 const UserSchema = new Schema({
+		id: {type: Number},
     name: {type: String},
+    email: {type: String},
+    image: {type: String},
+    password: {type: String}
 })
 
 // BlockSchema.post('findOneAndUpdate', function(doc, next) {

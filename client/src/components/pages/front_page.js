@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 //import Loading from './Loading';
 //import PropTypes from 'prop-types';
-import cover from '../../assets/images/background2.jpg';
+
+
 import logo from '../../assets/images/logo.png';
 import { Link } from "react-router-dom";
 
@@ -22,7 +23,6 @@ class FrontPage extends Component {
       return (
         <div className="App-page Front-page">
           <div className="cover-container">
-						<img className="cover-image" src={cover}  />
 						<div className="welcome">
               <Link className="title" to="/home">Brews Bags</Link>
               <img className="welcome-logo" src={logo} />
